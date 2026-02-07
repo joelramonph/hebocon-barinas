@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Estilos base para la Hebocon */
+body {
+  @apply bg-zinc-50 text-zinc-900;
+}
