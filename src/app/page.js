@@ -111,49 +111,53 @@ export default function Home() {
             Aliados que apuestan al Ingenio
           </h3>
 
-          {/* Grid de Logos */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          {/* GRID RESPONSIVO: 1 col en móvil, 2 en tablet (sm), 4 en PC (md) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 items-center">
 
-            {/* Patrocinador 1: USICA */}
-            <div className="group border-4 border-black p-1 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video flex items-center justify-center relative overflow-hidden">
+            {/* Organizador: USICA */}
+            <div className="group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video flex items-center justify-center relative overflow-hidden">
 
-              {/* 👇 LA ETIQUETA DEBE IR AQUÍ ADENTRO PARA QUE SE "PEGUE" AL CUADRO */}
-              <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] md:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]
-              /* Tamaño en Móvil */
-              text-[8px] px-1.5 py-0.5 border-b-2 border-r-2 
-              /* Tamaño en Escritorio (MD en adelante) */
-              md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
+              {/* Etiqueta de Organizador (Ajustada para móvil) */}
+              <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] text-[10px] px-2 py-0.5 border-b-2 border-r-2 md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
                 Organizador
               </span>
 
               <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all">
                 <Image
                   src="/logos/logoUsica.PNG"
-                  alt="Logo USICA"
+                  alt="Logo USICA - Organizador"
                   fill
-                  className="object-contain transition-transform group-hover:scale-110"
+                  className="object-contain transition-transform group-hover:scale-110 p-2"
                 />
               </div>
             </div>
 
+            {/* Placeholder 1: CasaPro */}
+           
+            <div className="group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video flex items-center justify-center relative overflow-hidden">
 
-            {/* Patrocinador 2: CasaPro */}
-            <div className="group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] grayscale hover:grayscale-0 transition-all aspect-video flex items-center justify-center relative overflow-hidden">
-              <Image
-                src="/logos/logoUsica.PNG"
-                alt="Logo CasaPro"
-                fill
-                className="object-contain p-4 transition-transform group-hover:scale-110"
-              />
+              {/* Etiqueta de Organizador (Ajustada para móvil) */}
+              <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] text-[10px] px-2 py-0.5 border-b-2 border-r-2 md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
+                Sede Oficial
+              </span>
+
+              <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all">
+                <Image
+                  src="/logos/logoUsica.PNG"
+                  alt="Logo USICA - Organizador"
+                  fill
+                  className="object-contain transition-transform group-hover:scale-110 p-2"
+                />
+              </div>
             </div>
 
-            {/* Placeholder: Tu Marca Aquí */}
+            {/* Placeholder 2: Tu Marca Aquí */}
             <div className="border-4 border-dashed border-zinc-300 p-8 flex flex-col items-center justify-center text-zinc-400 aspect-video group hover:border-black hover:text-black transition-colors">
               <span className="font-black uppercase italic text-sm">Sponsor STEAM</span>
               <span className="text-xs font-bold uppercase tracking-tighter">Cupo Disponible</span>
             </div>
 
-            {/* Placeholder: Apoyo Barinas */}
+            {/* Placeholder 3: Apoyo Barinas */}
             <div className="border-4 border-dashed border-zinc-300 p-8 flex flex-col items-center justify-center text-zinc-400 aspect-video group hover:border-black hover:text-black transition-colors">
               <span className="font-black uppercase italic text-sm">Apoyo Local</span>
               <span className="text-xs font-bold uppercase tracking-tighter">Tu Marca Aquí</span>
@@ -162,8 +166,8 @@ export default function Home() {
 
           {/* Llamado a la acción */}
           <div className="mt-16 p-8 border-4 border-black bg-yellow-50 inline-block rotate-1 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <p className="font-bold text-lg mb-4 text-black">¿Quieres apoyar la robótica creativa en Barinas?</p>
-            <a href="mailto:joelramonph@gmail.com?subject=Interés en Patrocinar Hebocon Barinas&body=Hola Joel, vi la web y me gustaría apoyar el evento..."
+            <p className="font-bold text-lg mb-4 text-black italic">¿Quieres apoyar la robótica creativa en Barinas?</p>
+            <a href="mailto:joelramonph@gmail.com?subject=Interés en Patrocinar Hebocon Barinas"
               className="text-blue-600 font-black uppercase underline hover:text-red-600 transition-colors">
               ¡Conviértete en Patrocinante Oficial!
             </a>
