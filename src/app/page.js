@@ -145,7 +145,7 @@ export default function Home() {
               <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] text-[8px] px-1.5 py-0.5 border-b-2 border-r-2 md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
                 Sede-CASAPRO
               </span>
-              <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all flex items-center justify-center">
+              <div className="relative w-full h-full grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all flex items-center justify-center">
                 <Image 
                   src="/logos/logoCasapro.jpg" 
                   alt="USICA"
