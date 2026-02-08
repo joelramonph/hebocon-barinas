@@ -116,13 +116,13 @@ export default function Home() {
 
             {/* Organizador: USICA */}
             <Link 
-              href="https://www.instagram.com/usica.ve?igsh=eHZpdDg0Mm9rdnBj"
+              href="https://www.instagram.com/usica.ve"
               target="_blank"
               rel="noopener noreferrer"
               className="block group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video relative overflow-hidden"
             >
               <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] text-[8px] px-1.5 py-0.5 border-b-2 border-r-2 md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
-                Organizador
+                Organizador-USICA
               </span>
               <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all flex items-center justify-center">
                 <Image 
@@ -137,13 +137,13 @@ export default function Home() {
             {/* Placeholder 1: CasaPro */}
 
             <Link 
-              href="https://www.instagram.com/casaprove?igsh=dHhja2NzMHhkNzJt"
+              href="https://www.instagram.com/casaprove"
               target="_blank"
               rel="noopener noreferrer"
               className="block group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video relative overflow-hidden"
             >
               <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] text-[8px] px-1.5 py-0.5 border-b-2 border-r-2 md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
-                Sede Oficial
+                Sede-CASAPRO
               </span>
               <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all flex items-center justify-center">
                 <Image 
@@ -218,13 +218,13 @@ export default function Home() {
             <div className="space-y-4">
               <h4 className="text-blue-600 font-black uppercase italic text-xl">Conéctate a USICA</h4>
               <div className="flex gap-4">
-                <a href="#" className="p-3 bg-white text-black border-2 border-white hover:bg-yellow-400 transition-colors">
+                <a href="https://www.instagram.com/usica.ve" className="p-3 bg-white text-black border-2 border-white hover:bg-yellow-400 transition-colors">
                   <Instagram size={24} />
                 </a>
                 <a href="#" className="p-3 bg-white text-black border-2 border-white hover:bg-blue-600 hover:text-white transition-colors">
                   <MessageCircle size={24} />
                 </a>
-                <a href="#" className="p-3 bg-white text-black border-2 border-white hover:bg-gray-800 hover:text-white transition-colors">
+                <a href="https://github.com/joelramonph" className="p-3 bg-white text-black border-2 border-white hover:bg-gray-800 hover:text-white transition-colors">
                   <Github size={24} />
                 </a>
               </div>
