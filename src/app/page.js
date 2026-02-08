@@ -56,7 +56,7 @@ export default function Home() {
             <div className="bg-white border-4 border-black p-6 rotate-1 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
               <h4 className="text-2xl font-black uppercase mb-4 text-red-600">Convocatoria 2026:</h4>
               <p className="italic text-gray-700">
-                En esta edición contaremos con la participación de **8 equipos** representando a **2 instituciones aliadas**, reuniendo a jóvenes inventores de entre **9 y 15 años** listos para demostrar que la robótica es para todos.
+                En esta edición contaremos con la participación de **8 equipos** representando a **2 instituciones aliadas**, reuniendo a jóvenes creadores** listos para demostrar que la robótica es para todos.
               </p>
             </div>
 
@@ -158,7 +158,7 @@ export default function Home() {
                   <MapPin size={20} className="text-blue-600" /> CasaPro, Barinas
                 </p>
                 <p className="flex items-center gap-2 italic text-gray-400">
-                  Exclusivo para jóvenes de 9 a 15 años.
+                  Organiza USICA.
                 </p>
               </div>
             </div>
