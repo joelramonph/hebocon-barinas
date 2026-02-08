@@ -90,7 +90,7 @@ export default function Reglas() {
           <div>
             <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
               <Bot className="text-blue-600" size={24} />
-              <span className="font-black uppercase italic tracking-tighter text-xl">Onda Robótica</span>
+              <span className="font-black uppercase italic tracking-tighter text-xl">USICA es Robótica</span>
             </div>
             <p className="font-bold text-stone-500 text-sm uppercase">Fomentando la educación STEAM en Barinas</p>
           </div>
