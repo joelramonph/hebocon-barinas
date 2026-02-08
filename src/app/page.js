@@ -115,41 +115,47 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 items-center">
 
             {/* Organizador: USICA */}
-            <div className="group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video flex items-center justify-center relative overflow-hidden">
-
-              {/* Etiqueta de Organizador (Ajustada para móvil) */}
-              <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] text-[10px] px-2 py-0.5 border-b-2 border-r-2 md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
+            <Link 
+              href="https://www.instagram.com/usica.ve?igsh=eHZpdDg0Mm9rdnBj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video relative overflow-hidden"
+            >
+              <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] text-[8px] px-1.5 py-0.5 border-b-2 border-r-2 md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
                 Organizador
               </span>
-
-              <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all">
-                <Image
-                  src="/logos/logoUsica.PNG"
-                  alt="Logo USICA - Organizador"
+              <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all flex items-center justify-center">
+                <Image 
+                  src="/logos/logoUsica.PNG" 
+                  alt="USICA"
                   fill
-                  className="object-contain transition-transform group-hover:scale-110 p-2"
+                  className="object-contain p-2 transition-transform group-hover:scale-110"
                 />
               </div>
-            </div>
+            </Link>
 
             {/* Placeholder 1: CasaPro */}
-           
-            <div className="group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video flex items-center justify-center relative overflow-hidden">
 
-              {/* Etiqueta de Organizador (Ajustada para móvil) */}
-              <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] text-[10px] px-2 py-0.5 border-b-2 border-r-2 md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
+            <Link 
+              href="https://www.instagram.com/casaprove?igsh=dHhja2NzMHhkNzJt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video relative overflow-hidden"
+            >
+              <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] text-[8px] px-1.5 py-0.5 border-b-2 border-r-2 md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
                 Sede Oficial
               </span>
-
-              <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all">
-                <Image
-                  src="/logos/logoUsica.PNG"
-                  alt="Logo USICA - Organizador"
+              <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all flex items-center justify-center">
+                <Image 
+                  src="/logos/logoCasapro.jpg" 
+                  alt="USICA"
                   fill
-                  className="object-contain transition-transform group-hover:scale-110 p-2"
+                  className="object-contain p-2 transition-transform group-hover:scale-110"
                 />
               </div>
-            </div>
+            </Link>
+
+            
 
             {/* Placeholder 2: Tu Marca Aquí */}
             <div className="border-4 border-dashed border-zinc-300 p-8 flex flex-col items-center justify-center text-zinc-400 aspect-video group hover:border-black hover:text-black transition-colors">
@@ -210,7 +216,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-blue-600 font-black uppercase italic text-xl">Conéctate</h4>
+              <h4 className="text-blue-600 font-black uppercase italic text-xl">Conéctate a USICA</h4>
               <div className="flex gap-4">
                 <a href="#" className="p-3 bg-white text-black border-2 border-white hover:bg-yellow-400 transition-colors">
                   <Instagram size={24} />
