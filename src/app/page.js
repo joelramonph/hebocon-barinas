@@ -115,28 +115,32 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
 
             {/* Patrocinador 1: USICA */}
-<div className="group border-4 border-black p-1 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video flex items-center justify-center relative overflow-hidden">
-  
-  {/* 👇 LA ETIQUETA DEBE IR AQUÍ ADENTRO PARA QUE SE "PEGUE" AL CUADRO */}
-  <span className="absolute top-0 left-0 bg-blue-600 text-white text-[10px] md:text-xs font-black uppercase italic px-3 py-1 border-b-4 border-r-4 border-black z-20 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-    Organizador
-  </span>
+            <div className="group border-4 border-black p-1 bg-white shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all aspect-video flex items-center justify-center relative overflow-hidden">
 
-  <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all">
-    <Image
-      src="/logos/logoUsica.PNG"
-      alt="Logo USICA"
-      fill
-      className="object-contain transition-transform group-hover:scale-110"
-    />
-  </div>
-</div>
-        
+              {/* 👇 LA ETIQUETA DEBE IR AQUÍ ADENTRO PARA QUE SE "PEGUE" AL CUADRO */}
+              <span className="absolute top-0 left-0 bg-blue-600 text-white z-20 font-black uppercase italic border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] md:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]
+              /* Tamaño en Móvil */
+              text-[8px] px-1.5 py-0.5 border-b-2 border-r-2 
+              /* Tamaño en Escritorio (MD en adelante) */
+              md:text-xs md:px-3 md:py-1 md:border-b-4 md:border-r-4">
+                Organizador
+              </span>
+
+              <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all">
+                <Image
+                  src="/logos/logoUsica.PNG"
+                  alt="Logo USICA"
+                  fill
+                  className="object-contain transition-transform group-hover:scale-110"
+                />
+              </div>
+            </div>
+
 
             {/* Patrocinador 2: CasaPro */}
             <div className="group border-4 border-black p-4 bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] grayscale hover:grayscale-0 transition-all aspect-video flex items-center justify-center relative overflow-hidden">
               <Image
-                src="/logos/casapro.png"
+                src="/logos/logoUsica.PNG"
                 alt="Logo CasaPro"
                 fill
                 className="object-contain p-4 transition-transform group-hover:scale-110"
