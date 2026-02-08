@@ -9,7 +9,8 @@ import {
   Instagram,
   Github,
   Mail,
-  MessageCircle
+  MessageCircle,
+  ScrollText // Icono añadido para las reglas
 } from 'lucide-react';
 
 export default function Home() {
@@ -23,9 +24,15 @@ export default function Home() {
             Hebocon <span className="text-blue-600">Barinas</span>
           </span>
         </div>
-        <Link href="/registro" className="bg-yellow-400 border-2 border-black px-4 py-2 font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all">
-          OBTENER MI PASE
-        </Link>
+        <div className="flex items-center gap-4">
+          {/* Link en Nav para Escritorio */}
+          <Link href="/reglas" className="hidden md:block font-black uppercase italic hover:text-blue-600 transition-colors">
+            Reglas
+          </Link>
+          <Link href="/registro" className="bg-yellow-400 border-2 border-black px-4 py-2 font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all">
+            OBTENER MI PASE
+          </Link>
+        </div>
       </nav>
 
       {/* Hero Section */}
@@ -33,9 +40,19 @@ export default function Home() {
         <h1 className="text-6xl md:text-9xl font-black uppercase italic leading-none mb-6">
           ¡Chatarra <br /> <span className="text-blue-600">al Poder!</span>
         </h1>
-        <p className="text-xl md:text-2xl font-bold bg-yellow-300 inline-block px-4 py-1 border-2 border-black -rotate-1">
+        <p className="text-xl md:text-2xl font-bold bg-yellow-300 inline-block px-4 py-1 border-2 border-black -rotate-1 mb-12">
           07 DE MARZO - CASAPRO, BARINAS, VENEZUELA
         </p>
+
+        {/* BOTONES DE ACCIÓN PRINCIPALES */}
+        <div className="flex flex-col md:flex-row justify-center gap-6 mt-8">
+          <Link href="/registro" className="bg-blue-600 text-white border-4 border-black px-8 py-4 font-black text-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all flex items-center gap-3 justify-center">
+            OBTENER MI PASE
+          </Link>
+          <Link href="/reglas" className="bg-white text-black border-4 border-black px-8 py-4 font-black text-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all flex items-center gap-3 justify-center">
+            <ScrollText size={32} /> VER REGLAS
+          </Link>
+        </div>
       </header>
 
       {/* SECCIÓN DE INTRODUCCIÓN / ABOUT */}
@@ -56,7 +73,7 @@ export default function Home() {
             <div className="bg-white border-4 border-black p-6 rotate-1 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
               <h4 className="text-2xl font-black uppercase mb-4 text-red-600">Convocatoria 2026:</h4>
               <p className="italic text-gray-700">
-                En esta edición contaremos con la participación de **8 equipos** representando a **2 instituciones aliadas**, reuniendo a jóvenes creadores** listos para demostrar que la robótica es para todos.
+                En esta edición contaremos con la participación de **8 equipos** representando a **2 instituciones aliadas**, reuniendo a jóvenes creadores listos para demostrar que la robótica es para todos.
               </p>
             </div>
 
@@ -93,31 +110,23 @@ export default function Home() {
             Aliados que apuestan al Ingenio
           </h3>
 
-          {/* Grid de Logos */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-70 grayscale hover:grayscale-0 transition-all">
-            {/* Placeholder para patrocinador 1 */}
             <div className="border-4 border-dashed border-zinc-300 p-8 flex items-center justify-center text-zinc-400 font-bold uppercase italic">
               Tu Marca Aquí
             </div>
-            {/* Placeholder para patrocinador 2 */}
             <div className="border-4 border-dashed border-zinc-300 p-8 flex items-center justify-center text-zinc-400 font-bold uppercase italic">
               Logo Local
             </div>
-            {/* Placeholder para patrocinador 3 */}
             <div className="border-4 border-dashed border-zinc-300 p-8 flex items-center justify-center text-zinc-400 font-bold uppercase italic">
               Sponsor STEAM
             </div>
-            {/* Placeholder para patrocinador 4 */}
             <div className="border-4 border-dashed border-zinc-300 p-8 flex items-center justify-center text-zinc-400 font-bold uppercase italic">
               Apoyo Barinas
             </div>
           </div>
 
-          {/* Llamado a nuevos patrocinadores */}
           <div className="mt-16 p-8 border-4 border-black bg-yellow-50 inline-block rotate-1 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <p className="font-bold text-lg mb-4">¿Quieres apoyar la robótica creativa en Barinas?</p>
-
-
             <a href="mailto:joelramonph@gmail.com?subject=Interés en Patrocinar Hebocon Barinas&body=Hola Joel, vi la web y me gustaría apoyar el evento..."
               className="text-blue-600 font-black uppercase underline hover:text-red-600 transition-colors">
               ¡Conviértete en Patrocinante Oficial!
@@ -130,8 +139,6 @@ export default function Home() {
       <footer className="bg-black text-white pt-16 pb-8 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-
-            {/* Columna 1: El Evento */}
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <div className="bg-blue-600 p-2 border-2 border-white">
@@ -147,7 +154,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Columna 2: Info Rápida */}
             <div className="space-y-4">
               <h4 className="text-yellow-400 font-black uppercase italic text-xl">¿Cuándo y Dónde?</h4>
               <div className="space-y-2 font-bold">
@@ -163,7 +169,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Columna 3: Créditos y Redes */}
             <div className="space-y-4">
               <h4 className="text-blue-600 font-black uppercase italic text-xl">Conéctate</h4>
               <div className="flex gap-4">
@@ -184,11 +189,11 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Barra Inferior */}
           <div className="border-t-2 border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-bold text-gray-500">
             <p>© 2026 HEBOCON BARINAS. TODOS LOS DERECHOS RESERVADOS.</p>
             <div className="flex gap-6 uppercase">
-              <a href="#" className="hover:text-white">Reglamento</a>
+              {/* Link del reglamento actualizado en el footer */}
+              <Link href="/reglas" className="hover:text-white transition-colors">Reglamento</Link>
               <a href="#" className="hover:text-white">Privacidad</a>
             </div>
           </div>
