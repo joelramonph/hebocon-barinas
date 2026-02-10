@@ -123,7 +123,7 @@ export default function Home() {
             </div>
 
             <p className="mt-8 italic">
-              Para los niños y jóvenes de Barinas, esta es una oportunidad única de aprender mecánica básica y resolución de problemas de una forma épica.
+              Para los niños y jóvenes de Barinas, esta es una oportunidad única de iniciarse en la robótica educativa y resolución de problemas de una forma épica.
             </p>
           </div>
         </div>
