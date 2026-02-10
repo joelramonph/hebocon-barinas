@@ -42,7 +42,7 @@ export default function Home() {
           ¡Chatarra <br /> <span className="text-blue-600">al Poder!</span>
         </h1>
         <p className="text-xl md:text-2xl font-bold bg-yellow-300 inline-block px-4 py-1 border-2 border-black -rotate-1 mb-12">
-          07 DE MARZO - CASAPRO, BARINAS, VENEZUELA
+          25 DE ABRIL - CASAPRO, BARINAS, VENEZUELA
         </p>
 
         {/* BOTONES DE ACCIÓN PRINCIPALES */}
@@ -204,10 +204,10 @@ export default function Home() {
               <h4 className="text-yellow-400 font-black uppercase italic text-xl">¿Cuándo y Dónde?</h4>
               <div className="space-y-2 font-bold">
                 <p className="flex items-center gap-2">
-                  <Calendar size={20} className="text-blue-600" /> 07 de Marzo, 2026
+                  <Calendar size={20} className="text-blue-600" /> 25 de Abril, 2026
                 </p>
                 <p className="flex items-center gap-2">
-                  <MapPin size={20} className="text-blue-600" /> CasaPro, Barinas
+                  <MapPin size={20} className="text-blue-600" /> Casapro, Barinas
                 </p>
                 <p className="flex items-center gap-2 italic text-gray-400">
                   Organiza USICA.
