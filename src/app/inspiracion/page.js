@@ -15,34 +15,33 @@ import {
 const robotsInspiracion = [
   {
     id: 1,
-    nombre: "El Valiente de Cartón",
-    src: "https://i.imgur.com/8tGkFqM.jpg", 
-    descripcion: "Un ejemplo brillante de cómo la estructura no necesita ser de metal para ser funcional. Pura ingeniería de cartón.",
+    nombre: "El Guardián Voltio",
+    src: "/logos/doghe.jpeg", 
+    descripcion: "Equilibrio perfecto con patas de madera y mirada audaz. La prueba de que 9V son suficientes para tener personalidad.",
     tech: "Ingenio: Nivel 1"
   },
   {
     id: 2,
-    nombre: "Franken-Bot 3000",
-    src: "https://i.imgur.com/4zKxTqE.jpg",
-    descripcion: "Dando una segunda vida a componentes electrónicos olvidados. La esencia del reciclaje creativo.",
-    tech: "Reciclaje Activo"
+    nombre: "Prototipo de Arena",
+    src: "/logos/dosheboy.jpeg",
+    descripcion: "¿Un gato contra una rampa? En Hebocon, la diversidad de diseños es nuestra mayor fortaleza en combate.",
+    tech: "Duelo Creativo"
   },
   {
     id: 3,
-    nombre: "Explorador de Vibración",
-    src: "https://i.imgur.com/9P7o3kF.jpg",
-    descripcion: "Demuestra que el movimiento puede surgir de las formas más simples y sorprendentes.",
-    tech: "Mecánica Simple"
+    nombre: "El Ciempiés de Chatarra",
+    src: "/logos/gusanoHebo.jpeg",
+    descripcion: "Chasis extendido y tracción múltiple. Un diseño que no teme mostrar sus cables para ganar.",
+    tech: "Mecánica Expandida"
   },
   {
     id: 4,
-    nombre: "Ciclón de Tapas",
-    src: "https://i.imgur.com/Lq5M9zX.jpg",
-    descripcion: "Ruedas hechas con tapas de refresco. Una lección de resolución de problemas con lo que hay a mano.",
-    tech: "Low-Tech Real"
+    nombre: "Misión: Curiosidad",
+    src: "/logos/mauHebocon.jpg",
+    descripcion: "No es solo armar robots, es entender cómo funcionan las cosas. El primer paso de todo gran Coach STEAM.",
+    tech: "Aprendizaje Activo"
   }
 ];
-
 export default function Inspiracion() {
   return (
     <main className="min-h-screen bg-stone-50 text-stone-900 font-sans">
