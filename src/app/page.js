@@ -14,7 +14,8 @@ import {
   Mail,
   MessageCircle,
   ScrollText,
-  ArrowRight
+  ArrowRight,
+  Sparkles // Nuevo icono agregado
 } from 'lucide-react';
 
 export default function Home() {
@@ -54,6 +55,10 @@ export default function Home() {
           </span>
         </div>
         <div className="flex items-center gap-4">
+          {/* LINK INSPIRACIÓN AGREGADO A NAVBAR */}
+          <Link href="/inspiracion" className="hidden md:block font-black uppercase italic hover:text-blue-600 transition-colors">
+            Inspiración
+          </Link>
           <Link href="/reglas" className="hidden md:block font-black uppercase italic hover:text-blue-600 transition-colors">
             Reglas
           </Link>
@@ -148,8 +153,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NUEVA SECCIÓN TEASER DE INSPIRACIÓN */}
+      <section className="py-20 px-6 bg-white border-b-4 border-black">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2 order-2 md:order-1">
+            <div className="grid grid-cols-2 gap-4">
+              {/* Espacios decorativos que evocan la galería */}
+              <div className="border-4 border-black aspect-square bg-stone-100 rotate-2 shadow-[4px_4px_0px_0px_rgba(37,99,235,1)] flex items-center justify-center">
+                 <Bot size={48} className="text-blue-600 opacity-20" />
+              </div>
+              <div className="border-4 border-black aspect-square bg-blue-600 -rotate-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center">
+                 <Sparkles size={48} className="text-white opacity-40" />
+              </div>
+            </div>
+          </div>
+          
+          <div className="md:w-1/2 order-1 md:order-2 text-center md:text-left">
+            <h2 className="text-4xl md:text-5xl font-black uppercase italic mb-6 leading-tight">
+              ¿Buscas <span className="text-blue-600 font-outline-2">Ingenio?</span>
+            </h2>
+            <p className="text-xl font-bold mb-8 uppercase italic leading-tight text-stone-600">
+              Explora nuestra galería de proyectos y descubre cómo convertir materiales reciclados en máquinas sorprendentes.
+            </p>
+            <Link 
+              href="/inspiracion" 
+              className="inline-flex items-center gap-3 bg-white text-black border-4 border-black px-8 py-4 font-black text-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all group"
+            >
+              VER GALERÍA DE INGENIO <Sparkles className="text-blue-600 group-hover:rotate-12 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* SECCIÓN DE PATROCINADORES */}
-      <section className="py-16 px-6 bg-white border-b-4 border-black">
+      <section className="py-16 px-6 bg-stone-50 border-b-4 border-black">
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-3xl font-black uppercase italic mb-12 inline-block border-b-8 border-yellow-400">
             Aliados que apuestan al Ingenio
@@ -197,67 +234,64 @@ export default function Home() {
         </div>
       </section>
 
-    {/* SECCIÓN PROMOCIONAL WORLD LOGIC */}
-<section className="py-20 px-6 bg-orange-600 text-white border-b-4 border-black">
-  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-    
-    <div className="md:w-1/2 space-y-6 text-center md:text-left">
-      <h2 className="text-4xl md:text-6xl font-black uppercase italic leading-none">
-        World Logic: <br /> <span className="text-yellow-400 font-outline-2">Misión Marte</span>
-      </h2>
-      <p className="text-xl font-bold uppercase tracking-tight">
-        Desarrolla el pensamiento computacional <span className="bg-black text-white px-2 italic">SIN PANTALLAS</span>. 
-      </p>
-      
-      {/* Lista de Niveles con Iconos */}
-      <ul className="space-y-4 font-black uppercase text-sm italic inline-block text-left">
-        <li className="flex items-center gap-3">
-          <Rocket className="text-yellow-400" size={24} /> 
-          <span>Nivel 1: Protocolo Alfa (Secuencias)</span>
-        </li>
-        <li className="flex items-center gap-3">
-          <Zap className="text-yellow-400" size={24} /> 
-          <span>Nivel 2: Bucles y Condicionales</span>
-        </li>
-        <li className="flex items-center gap-3">
-          <Bot className="text-yellow-400" size={24} /> 
-          <span>Nivel 3: Algoritmos Críticos</span>
-        </li>
-      </ul>
+      {/* SECCIÓN PROMOCIONAL WORLD LOGIC */}
+      <section className="py-20 px-6 bg-orange-600 text-white border-b-4 border-black">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          
+          <div className="md:w-1/2 space-y-6 text-center md:text-left">
+            <h2 className="text-4xl md:text-6xl font-black uppercase italic leading-none">
+              World Logic: <br /> <span className="text-yellow-400 font-outline-2">Misión Marte</span>
+            </h2>
+            <p className="text-xl font-bold uppercase tracking-tight">
+              Desarrolla el pensamiento computacional <span className="bg-black text-white px-2 italic">SIN PANTALLAS</span>. 
+            </p>
+            
+            {/* Lista de Niveles con Iconos */}
+            <ul className="space-y-4 font-black uppercase text-sm italic inline-block text-left">
+              <li className="flex items-center gap-3">
+                <Rocket className="text-yellow-400" size={24} /> 
+                <span>Nivel 1: Protocolo Alfa (Secuencias)</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Zap className="text-yellow-400" size={24} /> 
+                <span>Nivel 2: Bucles y Condicionales</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Bot className="text-yellow-400" size={24} /> 
+                <span>Nivel 3: Algoritmos Críticos</span>
+              </li>
+            </ul>
 
-      <div className="pt-4">
-        {/* BOTÓN CON TU WHATSAPP REAL */}
-        <Link 
-          href="https://wa.me/584145308265?text=%C2%A1Hola%20Profe%20Joel%21%20%F0%9F%9A%80%20Vengo%20de%20la%20web%20y%20me%20interesa%20el%20Kit%20World%20Logic%3A%20Misi%C3%B3n%20Marte." 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-white text-black border-4 border-black px-10 py-5 font-black text-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all uppercase italic"
-        >
-          ADQUIRIR MI KIT
-        </Link>
-      </div>
-    </div>
+            <div className="pt-4">
+              <Link 
+                href="https://wa.me/584145308265?text=%C2%A1Hola%20Profe%20Joel%21%20%F0%9F%9A%80%20Vengo%20de%20la%20web%20y%20me%20interesa%20el%20Kit%20World%20Logic%3A%20Misi%C3%B3n%20Marte." 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-black border-4 border-black px-10 py-5 font-black text-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all uppercase italic"
+              >
+                ADQUIRIR MI KIT
+              </Link>
+            </div>
+          </div>
 
-    {/* Lado Derecho: Imagen del Tablero */}
-    <div className="md:w-1/2 flex justify-center">
-      <div className="border-8 border-black bg-white p-2 rotate-2 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden w-full max-w-md">
-        <div className="relative aspect-square border-4 border-black bg-stone-200">
-          <Image 
-            src="/logos/misionmarte.jpg" 
-            alt="Tablero World Logic 6x6"
-            fill
-            className="object-contain p-2" 
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
+          <div className="md:w-1/2 flex justify-center">
+            <div className="border-8 border-black bg-white p-2 rotate-2 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden w-full max-w-md">
+              <div className="relative aspect-square border-4 border-black bg-stone-200">
+                <Image 
+                  src="/logos/misionmarte.jpg" 
+                  alt="Tablero World Logic 6x6"
+                  fill
+                  className="object-contain p-2" 
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div className="absolute bottom-6 right-6 bg-red-600 text-white px-4 py-2 font-black uppercase italic border-4 border-black -rotate-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-sm z-30">
+                ¡Misión Marte!
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="absolute bottom-6 right-6 bg-red-600 text-white px-4 py-2 font-black uppercase italic border-4 border-black -rotate-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-sm z-30">
-          ¡Misión Marte!
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+      </section>
 
       {/* FOOTER */}
       <footer className="bg-black text-white pt-16 pb-8 px-6">
@@ -308,6 +342,8 @@ export default function Home() {
           <div className="border-t-2 border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-black text-gray-700 tracking-widest uppercase">
             <p>© 2026 HEBOCON BARINAS. TODOS LOS DERECHOS RESERVADOS.</p>
             <div className="flex gap-6">
+              {/* LINK AGREGADO AL FOOTER TAMBIÉN */}
+              <Link href="/inspiracion" className="hover:text-white transition-colors">Inspiración</Link>
               <Link href="/reglas" className="hover:text-white transition-colors">Reglamento</Link>
             </div>
           </div>
