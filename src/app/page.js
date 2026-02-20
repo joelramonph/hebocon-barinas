@@ -197,6 +197,68 @@ export default function Home() {
         </div>
       </section>
 
+    {/* SECCIÓN PROMOCIONAL WORLD LOGIC */}
+<section className="py-20 px-6 bg-orange-600 text-white border-b-4 border-black">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    
+    <div className="md:w-1/2 space-y-6 text-center md:text-left">
+      <h2 className="text-4xl md:text-6xl font-black uppercase italic leading-none">
+        World Logic: <br /> <span className="text-yellow-400 font-outline-2">Misión Marte</span>
+      </h2>
+      <p className="text-xl font-bold uppercase tracking-tight">
+        Desarrolla el pensamiento computacional <span className="bg-black text-white px-2 italic">SIN PANTALLAS</span>. 
+      </p>
+      
+      {/* Lista de Niveles con Iconos */}
+      <ul className="space-y-4 font-black uppercase text-sm italic inline-block text-left">
+        <li className="flex items-center gap-3">
+          <Rocket className="text-yellow-400" size={24} /> 
+          <span>Nivel 1: Protocolo Alfa (Secuencias)</span>
+        </li>
+        <li className="flex items-center gap-3">
+          <Zap className="text-yellow-400" size={24} /> 
+          <span>Nivel 2: Bucles y Condicionales</span>
+        </li>
+        <li className="flex items-center gap-3">
+          <Bot className="text-yellow-400" size={24} /> 
+          <span>Nivel 3: Algoritmos Críticos</span>
+        </li>
+      </ul>
+
+      <div className="pt-4">
+        {/* BOTÓN CON TU WHATSAPP REAL */}
+        <Link 
+          href="https://wa.me/584145308265?text=%C2%A1Hola%20Profe%20Joel%21%20%F0%9F%9A%80%20Vengo%20de%20la%20web%20y%20me%20interesa%20el%20Kit%20World%20Logic%3A%20Misi%C3%B3n%20Marte." 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-black border-4 border-black px-10 py-5 font-black text-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all uppercase italic"
+        >
+          ADQUIRIR MI KIT
+        </Link>
+      </div>
+    </div>
+
+    {/* Lado Derecho: Imagen del Tablero */}
+    <div className="md:w-1/2 flex justify-center">
+      <div className="border-8 border-black bg-white p-2 rotate-2 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden w-full max-w-md">
+        <div className="relative aspect-square border-4 border-black bg-stone-200">
+          <Image 
+            src="/logos/misionmarte.jpg" 
+            alt="Tablero World Logic 6x6"
+            fill
+            className="object-contain p-2" 
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+        <div className="absolute bottom-6 right-6 bg-red-600 text-white px-4 py-2 font-black uppercase italic border-4 border-black -rotate-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-sm z-30">
+          ¡Misión Marte!
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
       {/* FOOTER */}
       <footer className="bg-black text-white pt-16 pb-8 px-6">
         <div className="max-w-6xl mx-auto">
